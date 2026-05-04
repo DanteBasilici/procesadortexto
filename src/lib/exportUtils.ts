@@ -66,10 +66,11 @@ export async function saveAsDocx(html: string, filename: string) {
   const tmp = document.createElement("div");
   tmp.innerHTML = html;
 
-  const paragraphs: Paragraph[] = [];
+  // SOLUCIÓN: Solo inicializa el array sin tipado explícito
+  const paragraphs: any[] = []; // o simplemente: const paragraphs = [];
 
-  const processNode = (node: Node): TextRun[] => {
-    const runs: TextRun[] = [];
+  const processNode = (node: Node): any[] => {
+    const runs: any[] = []
     if (node.nodeType === Node.TEXT_NODE) {
       const text = node.textContent || "";
       if (text) runs.push(new TextRun({ text }));
