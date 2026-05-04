@@ -1,0 +1,54 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Directorios de compilación / empaquetado
+dist/
+build/
+out/
+target/
+*.pyc
+__pycache__/
+
+# Archivos de entorno y secretos
+.env
+.env.production
+.env.local
+
+# Archivos de cobertura de pruebas
+coverage/
+.nyc_output/
+
+# Otros
+*.tmp
+*.temp
+*.log
+*.bak
+*.pid
+*.seed
+*.pid.lock
